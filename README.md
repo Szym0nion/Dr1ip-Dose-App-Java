@@ -1,6 +1,7 @@
 # Drip Dose App in Android Studio
-![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/37f93abf-bba4-42a4-ae56-522d384e0835)
-![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/c8bc967b-87b3-4f74-9ff3-2375d852cf4e)
+![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/c8e52afd-642d-43f5-850c-de0c1e5ed5c2) ![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/a5d631d8-edbf-426c-abca-b9389b1d1e8e)
+ ![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/c8bc967b-87b3-4f74-9ff3-2375d852cf4e) ![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/395f2ed8-35a9-44b1-aadd-0a44f5076bb6)
+
 
 **Project description:**
 
