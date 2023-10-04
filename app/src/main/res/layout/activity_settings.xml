@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/txtInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        android:text="Drip Dose v.1.0.0 (1) made with ❤️ by Szymon Chmielewski"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTerms"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="600dp"
+
+        android:backgroundTint="#5A595B"
+        android:onClick="browserTerms"
+        android:text="Regulamin  📜"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPrivacy"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="582dp"
+        android:onClick="browserPrivacy"
+        android:text="Prywatność ✋"
+        app:layout_constraintBottom_toTopOf="@+id/btnTerms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFeedback"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="527dp"
+        android:onClick="browserFeedback"
+        android:text="Feedback 📧"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrivacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInstagram"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="475dp"
+        android:text="INSTAGRAM 🤳"
+        android:onClick="browserInstagram"
+        app:layout_constraintBottom_toTopOf="@+id/btnFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="418dp"
+        android:text="WYSTAW OPINIE ⭐"
+        android:onClick="browserReview"
+        app:layout_constraintBottom_toTopOf="@+id/btnInstagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="270dp"
+        android:background="#00000000"
+        android:fontFamily="@font/dm_serif_text"
+        android:text="O mnie:"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLanguage"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="270dp"
+        android:text="język 🏴‍☠️"
+        app:layout_constraintBottom_toTopOf="@+id/btnReview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSound"
+        android:layout_width="318dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="260dp"
+        android:background="#5A595B"
+        android:fontFamily="@font/dm_serif_text"
+        android:text="   \n      DŹWIĘK WŁĄCZ/WYŁĄCZ 🔊"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:text="Zmień"
+        android:onClick="SoundSwitch"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSound"
+        app:layout_constraintEnd_toEndOf="@+id/txtSound"
+        app:layout_constraintStart_toStartOf="@+id/txtSound"
+        app:layout_constraintTop_toTopOf="@+id/txtSound" />
+
+    <TextView
+        android:id="@+id/txtVibration"
+        android:layout_width="318dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="200dp"
+        android:background="#5A595B"
+        android:fontFamily="@font/dm_serif_text"
+        android:text="\n      WIBRACJA WŁĄCZ/WYŁĄCZ 📳"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchVibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:text="Zmień"
+        android:onClick="VibrationSwitch"
+        app:layout_constraintBottom_toBottomOf="@+id/txtVibration"
+        app:layout_constraintEnd_toEndOf="@+id/txtVibration"
+        app:layout_constraintStart_toStartOf="@+id/txtVibration"
+        app:layout_constraintTop_toTopOf="@+id/txtVibration" />
+
+    <ImageButton
+        android:id="@+id/btnSettingsExit"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="600dp"
+        android:background="#2FB577"
+        android:backgroundTint="#00000000"
+        android:onClick="btnSettingsExit"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        app:tint="#ED6982" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

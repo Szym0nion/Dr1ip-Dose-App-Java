@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9E2EE"
+    tools:context=".CatActivity">
+
+    <TextView
+        android:id="@+id/txtDogName1"
+        android:layout_width="216dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="450dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Drip"
+        android:textColor="#EE6983"
+        android:textSize="108sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDogName2"
+        android:layout_width="232dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Dose"
+        android:textColor="#EE6983"
+        android:textSize="108sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDogName1" />
+
+    <EditText
+        android:id="@+id/edtNumberDog"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:hint="  masa [kg]...."
+        android:digits="0123456789,"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDogName2" />
+
+    <ImageButton
+        android:id="@+id/btnCatSettings"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginBottom="600dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:onClick="btnCatSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        app:tint="#ED6982" />
+
+    <ImageButton
+        android:id="@+id/btnCatExit"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="600dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        android:onClick="btnCatExit"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        app:tint="#ED6982" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

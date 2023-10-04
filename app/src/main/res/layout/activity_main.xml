@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABE5F0"
+    android:backgroundTint="#AAE3EF"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginBottom="600dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        app:tint="#ED6982" />
+
+    <TextView
+        android:id="@+id/txtName1"
+        android:layout_width="216dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="450dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Drip"
+        android:textColor="#EE6983"
+        android:textSize="108sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtName2"
+        android:layout_width="232dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Dose"
+        android:textColor="#EE6983"
+        android:textSize="108sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName1" />
+
+    <ImageButton
+        android:id="@+id/btnDog"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="75dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName2"
+        app:srcCompat="@drawable/dog_icon" />
+
+    <ImageButton
+        android:id="@+id/btnCat"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="70dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName2"
+        app:srcCompat="@drawable/cat_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9E2EE"
+    tools:context=".DogActivity">
+
+
+    <EditText
+        android:id="@+id/edtDogMass"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/back"
+        android:digits="0123456789,"
+        android:ems="10"
+        android:hint="  masa [kg]...."
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btnDogSettings"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginBottom="600dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:onClick="btnDogSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        app:tint="#ED6982" />
+
+    <ImageButton
+        android:id="@+id/btnDogExit"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="600dp"
+        android:background="#2FB577"
+        android:backgroundTint="#A9E2EE"
+        android:onClick="btnDogExit"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        app:tint="#ED6982" />
+
+    <Button
+        android:id="@+id/btnResultDog"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="600dp"
+        android:text="Sprawdź dawkę️"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHealthDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="550dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Czy pies jest pod znieczuleniem?"
+        android:textColor="#EE6983"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAnesthesiaDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="470dp"
+        android:text="Brak znieczulenia"
+        android:checked="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNoAnesthesiaDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:text="Nie podawac kroplówki!"
+        android:textSize="24sp"
+
+        android:textColor="#D2001A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
