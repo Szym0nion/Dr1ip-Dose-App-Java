@@ -1,5 +1,7 @@
 # Drip Dose App in Android Studio
 ![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/37f93abf-bba4-42a4-ae56-522d384e0835)
+![image](https://github.com/Szym0nion/Drip-Dose-App-Java/assets/110334194/c8bc967b-87b3-4f74-9ff3-2375d852cf4e)
+
 **Project description:**
 
 The overall drip dose given to animals is administered "by eye". Doctors, v
