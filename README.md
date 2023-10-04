@@ -12,3 +12,5 @@ Alarms that cannot be implemented in your system yet
 body weight, degree of dehydration, condition
 
 - obtaining information about the exact amount of drip, its flow and type
+
+*The application was created for the project of the subject Computing Technologies in Medical Equipment at the Silesian University of Technology
