@@ -34,6 +34,5 @@ public class CatActivity extends AppCompatActivity {
                 startActivity(intent_four);
             }
         });
-
     }
 }
